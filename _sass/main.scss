@@ -1,0 +1,25 @@
+@import "jekyll-theme-minimal";
+
+.payment-gw-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.payment-gw-icon{
+  width: 48px;
+  height: 48px;
+}
+
+.payment-gw-text{
+  margin-left: 1rem;
+}
+
+footer {
+  width:400px;
+  float:left;
+  position:fixed;
+  bottom:50px;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
