@@ -13,7 +13,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <img src="https://st3.depositphotos.com/6093758/13656/v/600/depositphotos_136560674-stock-video-it-professional-programmer-is-working.jpg" style="margin-left: auto; margin-right: auto">
+        <img src="https://st3.depositphotos.com/6093758/13656/v/600/depositphotos_136560674-stock-video-it-professional-programmer-is-working.jpg" style="border-radius: 50%">
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
         {% if site.logo %}
@@ -21,29 +21,22 @@
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
-        <ul>
-           <li>
-             Desarrollo de páginas web responsive para tu empresa.
-            </li>
-          <li>
-             Desarrollo de web apps.
-            </li>
-          <li>
-             Asesoramiento en la creación de tu sitio web.
-            </li>
-        </ul>
+        
+        <p> 
+          Desarrollo de páginas web responsive para tu empresa.
+          Desarrollo de web apps.
+          Asesoramiento en la creación de tu sitio web.
+        </p>
          
         <strong>
           Contáctanos:
         </strong>
 
         <div class="payment-gw-row">
-          <img src="{% link assets/payo-icon.jpg %}" class="payment-gw-icon">
           <span class="payment-gw-text">ilias_grecia@hotmail.com</span>
         </div>
 
         <div class="payment-gw-row">
-          <img src="{% link assets/paypal-icon.png %}" class="payment-gw-icon">
           <span class="payment-gw-text">+48 04121907602</span>
         </div>
           Almacen la porteña, avenida Bermudes #14.
@@ -61,6 +54,7 @@
 
       </section>
       <footer>
+        <br>
         <p>Este sitio web es propiedad y es administrado por <a href="{{ site.github.owner_url }}">Ilias Androutsopoulos</a></p>
       </footer>
     </div>
