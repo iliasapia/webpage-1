@@ -9,4 +9,4 @@ layout: main
 * Desarrollo de web apps.
 * Asesoramiento en la creación de tu sitio web.
 
-Para mas información sobre nuestros servicios, contáctanos.
+Para mas información sobre estos servicios, contáctame. Acepto pagos en Paypal y Payoner.
