@@ -1,5 +1,9 @@
 @import "jekyll-theme-minimal";
 
+body {
+	padding-left: 0rem !important;
+}
+
 .payment-gw-row{
   display: flex;
   flex-direction: row;

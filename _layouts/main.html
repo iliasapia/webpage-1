@@ -4,69 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    
-    <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
+	<link rel="stylesheet" href="{{ "/assets/style.css?v=" | append: site.github.build_revision | relative_url }}">
+	<link rel="stylesheet" href="{{ "/assets/css/resume.min.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+		<a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<span class="d-block d-lg-none">
+				{ site.title | default: site.github.repository_name }}
+			</span>
+			<!--
+			<span class="d-none d-lg-block">
+				<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{site.logo | relative_url}} alt="">
+			</span>
+			-->
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="{{ "/" | absolute_url }}">
+						{{ site.title | default: site.github.repository_name }}
+					</a>
+					<strong>
+						Ilias Androutsopoulos - 
+						{{ site.description | default: site.github.project_tagline }}
+					</strong>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#">
+						Contacto
+					</a>
+					<ul class="list-unstyled">
+						<li class="text-dark">
+							+58 04121907602
+						</li>
+						<li class="my-2 text-dark">
+								ilias_grecia@hotmail.com
+						</li>
+						<li class="text-dark">
+								Almacen la porteña, avenida Bermudes #14.
+								Cumaná, estado Sucre. Venezuela.
+						</li>
+					</ul>
+					
+				</li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#education">
+						Informacion de pago
+					</a>
+					<p class="text-dark">
+						Acepto pagos a traves de <a class="text-light" href="ilias_grecia@hotmail.com">
+							Payoneer
+						</a> y <a class="text-light" href="https://www.paypal.me/iliasapia">
+							Paypal
+						</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-         
-        <strong>
-          Contácto:
-        </strong>
+<div class="container col-12 col-sm-6 py-3 px-4">
+	<p class="lead mb-5">
+		{{ content }}
+	</p>
+	<div>
+		<hr>
+		<p>Este sitio web es propiedad y es administrado por <a href="{{ site.github.owner_url }}">Ilias Androutsopoulos</a></p>
+	</div>
+</div>
 
-        <div class="payment-gw-row">
-          <span class="payment-gw-text">ilias_grecia@hotmail.com</span>
-        </div>
 
-        <div class="payment-gw-row">
-          <span class="payment-gw-text">+58 04121907602</span>
-        </div>
-          Almacen la porteña, avenida Bermudes #14.
-        Cumaná, estado Sucre. Venezuela.
-        <div class="payment-gw-row">
-          <span class="payment-gw-text">
-              <a href="ilias_grecia@hotmail.com">
-                <img src="https://image.flaticon.com/icons/svg/38/38996.svg">
-              </a>
-
-                <a href="https://www.paypal.me/iliasapia">
-                <img src="https://image.flaticon.com/icons/svg/38/38971.svg">
-              </a>
-          </span>
-        </div>
-
-      </header>
-      <section>
-
-      {{ content }}
-
-      </section>
-      <footer>
-        <br>
-        <p>Este sitio web es propiedad y es administrado por <a href="{{ site.github.owner_url }}">Ilias Androutsopoulos</a></p>
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+	
+	  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+ crossorigin="anonymous"></script>
     {% if site.google_analytics %}
-    <script>
+	<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
-    </script>
+	</script>
     {% endif %}
   </body>
 </html>
