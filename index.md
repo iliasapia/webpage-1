@@ -11,4 +11,4 @@ Nikolaos Androutsopoulos, graduado en ciencias y tecnologías de alimentos en la
 * Asesoría para empresas que se dediquen a producir y vender alimentos.
 * Consejos de alimentación en general.
 
-Acepto pagos en Paypal y Payoner.
+Acepto pagos en Paypal y Payoneer.
